@@ -29,19 +29,23 @@ namespace EntityFramework
             {
                 if (data.Any())
                 {
-                    foreach (var item in data) { label2.Text = $"Po: {item.Po}\n品項: {item.Name}\n數量: {item.Quantity}\n價格: {item.Price}\n類別: {item.Category}"; }
-
+                    foreach (var d in data) { label2.Text = $"Po: {d.Po}\n品項: {d.Name}\n數量: {d.Quantity}\n價格: {d.Price}\n類別: {d.Category}";}
+                    
                 }
                 else
                 {
-                    label2.Text = "查無此Po";
+                    MessageBox.Show("查無此Po");
                 }
             }
             catch (Exception ex)
             { MessageBox.Show($"Something Wrong {ex.ToString()}"); }
 
         }
+        private void ClearTextBoxes()
+        {
+            textBox1.Clear();
 
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
