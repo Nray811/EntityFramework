@@ -16,10 +16,11 @@ namespace EntityFramework.Models
         [StringLength(50)]
         public string Name { get; set; }
 
-        public int? Quantity { get; set; }
+        public int Quantity { get; set; }
 
-        public int? Price { get; set; }
+        public int Price { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string Category { get; set; }
     }

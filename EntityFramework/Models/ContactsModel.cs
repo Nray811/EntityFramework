@@ -9,7 +9,7 @@ namespace EntityFramework.Models
     public partial class ContactsModel : DbContext
     {
         public ContactsModel()
-            : base("name=ContactsModel")
+            : base(" name = ContactsModel ")
         {
             AppDomain.CurrentDomain.SetData("DataDirectory", Directory.GetCurrentDirectory());
 

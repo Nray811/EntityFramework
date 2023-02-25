@@ -44,7 +44,7 @@ namespace EntityFramework
                 ClearTextBoxes();
             }
             catch (Exception ex)
-            { MessageBox.Show($"發生錯誤 {ex.ToString()}"); }
+            { MessageBox.Show($"Something Wrong {ex.ToString()}"); }
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
