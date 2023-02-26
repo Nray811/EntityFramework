@@ -29,12 +29,16 @@ namespace EntityFramework
             {
                 if (data.Any())
                 {
-                    foreach (var d in data) { label2.Text = $"Po: {d.Po}\n品項: {d.Name}\n數量: {d.Quantity}\n價格: {d.Price}\n類別: {d.Category}";}
+                    foreach (var d in data) 
+                    {
+                        MessageBox.Show($"Po: {d.Po}\n品項: {d.Name}\n數量: {d.Quantity}\n價格: {d.Price}\n類別: {d.Category}");
+                    }
                     
                 }
                 else
                 {
                     MessageBox.Show("查無此Po");
+                   
                 }
             }
             catch (Exception ex)
